@@ -1,10 +1,11 @@
-package com.example.recyclerviewproject
+package com.example.recyclerviewproject.presentation.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.recyclerviewproject.databinding.FragmentHomeBinding
 
 
@@ -19,8 +20,16 @@ class HomeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         _binding = FragmentHomeBinding.inflate(inflater,container, false)
+        initListener()
+
         return binding.root
-        //return inflater.inflate(R.layout.fragment_blank, container, false)
+    }
+
+    private fun initListener(){
+        binding.recyclerViewButton.setOnClickListener {
+            val action = HomeFragmentDirections.actionHomeFragmentToRecyclerViewFragment()
+            findNavController().navigate(action)
+        }
     }
 
 

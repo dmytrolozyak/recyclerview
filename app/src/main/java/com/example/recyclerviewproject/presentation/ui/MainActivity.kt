@@ -1,10 +1,10 @@
-package com.example.recyclerviewproject
+package com.example.recyclerviewproject.presentation.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
+import com.example.recyclerviewproject.R
 import com.example.recyclerviewproject.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

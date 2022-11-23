@@ -7,7 +7,16 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.recyclerviewproject.HomeFragment"
+        android:name="com.example.recyclerviewproject.presentation.ui.HomeFragment"
         android:label="fragment_blank"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_recyclerViewFragment"
+            app:destination="@id/recyclerViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recyclerViewFragment"
+        android:name="com.example.recyclerviewproject.presentation.ui.RecyclerViewFragment"
+        android:label="fragment_recycler_view"
+        tools:layout="@layout/fragment_recycler_view" />
 </navigation>

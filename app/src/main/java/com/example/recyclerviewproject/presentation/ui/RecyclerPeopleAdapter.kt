@@ -35,31 +35,6 @@ class RecyclerPeopleAdapter()
         return 100
     }
 
-//    private fun setDefault(holder: PeopleViewHolder){
-//        Glide.with(holder.binding.root.context).clear(holder.binding.heroImageView)
-//        holder.binding.heroName.text = ""
-//        holder.binding.heroCountry.text = ""
-//        holder.binding.heroPrice.text = ""
-//    }
-
-//    fun clearList() {
-//        this.herolist.value?.clear()
-//        Log.i("MYTAG" , "Adapter List:${this.herolist.value?..hashCode()}")
-//        notifyDataSetChanged()
-//    }
-
-//
-//    fun appendList(newList : List<GetTenantByIdResponse>) {
-//
-//        var rangeStart = this.herolist.value?..size+1
-//        if (this.herolist.value?..isEmpty())
-//            rangeStart = 0
-//
-//        val rangeEnd = rangeStart + newList.size
-//        this.herolist.value?..addAll(newList)
-//        notifyItemRangeInserted(rangeStart,rangeEnd)
-//
-//    }
 }
 
 class PeopleViewHolder(val binding: ConstraintItemBinding) : RecyclerView.ViewHolder (binding.root){

@@ -17,7 +17,7 @@ class RecyclerViewFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        android.util.Log.wtf(TAG, "onCreate: test for the new branch", )
+
 
     }
 
